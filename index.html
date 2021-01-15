@@ -5,56 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用于测试代码</title>
     <script src="jquery-3.5.1.js"></script>
-    <script>
-            var windowssele=window.getSelection();
-            var sele_rang;
-            var get_pid={
-                where(){
-                    sele_rang=windowssele.getRangeAt(0);
-                    st=sele_rang.startContainer;
-                    console.log(st)
-                    this.for_to_id(st);
-
-                    
-                    
-                },                              
-                for_to_id(sten){
-                    console.log(sten.id.slice(0,2))
-                    for(;sten.id.slice(0,2)!="pa";){
-                        
-                    }
-                }
-            }
-
-            var p_start={
-                id:7,
-                newone(){
-
-                }
-            }
-
-        $(document).ready(function () {
-            $("#intext br").css({
-            "background-color":"#5557",
-            "height":"10px",
-            "width":"10px"
-            })
-            $("#intext").keyup(e=>{
-            // console.log(e,e.keyCode);
-            switch(e.keyCode){
-                case 81:{
-                    if(e.ctrlKey){
-                        get_pid.where();
-                    }
-                    break;}
-            }
-            })
-
-
-        });
-        
-        
-    </script>
+    <script src="mian.js"></script>
     <style>
         #outtext{height: 500px;width: 70%;margin: 0 auto;background-color: #aa0a;}
         #intext{max-width: 90%;}
