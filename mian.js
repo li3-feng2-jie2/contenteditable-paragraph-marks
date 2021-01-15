@@ -8,7 +8,7 @@ var windowssele=window.getSelection();
                     let stendate=[];
                     sele_rang=windowssele.getRangeAt(0);
                     let sten=sele_rang.startContainer;                    
-                    console.log(sele_rang);                    
+                    // console.log(sele_rang);                    
                     stendate=this.for_to_id(sten);
                     sten=this.for_to_id(sele_rang.endContainer);
                     stendate.push(sten[0],sten[1]);
@@ -16,7 +16,7 @@ var windowssele=window.getSelection();
                 },                              
                 for_to_id(sten){
                     let nodenames=[];
-                    console.log(sten.id.slice(0,2))
+                    // console.log(sten.id.slice(0,2))
                     for(;sten.id.slice(0,2)!="pa";){
                         // sten=sten
                         if(sten.id=="intext")break;
